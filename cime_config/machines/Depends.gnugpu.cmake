@@ -19,7 +19,12 @@ list(APPEND NO_INLINE_ARG_PACKING_LIST
   eam/src/dynamics/se/inidat.F90
 )
 
+list(APPEND NO_INLINE_ARG_PACKING_LIST
+  eam/src/dynamics/se/inidat.F90
+)
+
 if (CMAKE_Fortran_COMPILER_VERSION VERSION_GREATER_EQUAL 10)
+
   foreach(ITEM IN LISTS ALLOW_INVALID_BOZ_LIST)
     e3sm_add_flags("${ITEM}" "-fallow-invalid-boz") # avoids build error for integer, parameter :: gen_hash_key_offset = z'000053db'
   endforeach()
@@ -30,5 +35,6 @@ if (CMAKE_Fortran_COMPILER_VERSION VERSION_GREATER_EQUAL 10)
       e3sm_add_flags("${ITEM}" " -fno-inline-arg-packing")
     endforeach()
   endif()
+
 endif()
 
