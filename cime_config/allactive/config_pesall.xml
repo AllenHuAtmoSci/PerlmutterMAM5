@@ -1385,7 +1385,7 @@
   <!-- 2000_DATM%JRA_ELM%SPBC_MPASSI_MPASO%DATMFORCED_MOSART_SGLC_SWAV_SIAC_SESP -->
   <!-- ATM_GRID is ne30np4.pg2  ICE_GRID is EC30to60E2r2 -->
   <grid name="a%ne30np4">
-    <mach name="pm-cpu|alvarez">
+    <mach name="pm-cpu">
       <pes compset="JRA_ELM.+MPASSI.+MPASO.+MOSART.+SGLC.+SWAV" pesize="any">
         <comment>"pm-cpu 4 nodes, 256 partition"</comment>
         <ntasks>
