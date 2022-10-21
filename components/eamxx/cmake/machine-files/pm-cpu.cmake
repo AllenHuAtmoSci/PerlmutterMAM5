@@ -2,7 +2,7 @@
 set (EKAT_MACH_FILES_PATH ${CMAKE_CURRENT_LIST_DIR}/../../../../externals/ekat/cmake/machine-files)
 
 #message(STATUS "pm-cpu PROJECT_NAME=${PROJECT_NAME} USE_CUDA=${USE_CUDA} KOKKOS_ENABLE_CUDA=${KOKKOS_ENABLE_CUDA}")
-include (${EKAT_MACH_FILES_PATH}/kokkos/amd-zen2.cmake)
+include (${EKAT_MACH_FILES_PATH}/kokkos/amd-zen3.cmake)
 include (${EKAT_MACH_FILES_PATH}/kokkos/openmp.cmake)
 #include (${EKAT_MACH_FILES_PATH}/kokkos/serial.cmake)
 
