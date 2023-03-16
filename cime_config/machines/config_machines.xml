@@ -226,7 +226,7 @@
 
       <modules compiler="nvidia">
         <command name="load">PrgEnv-nvidia</command>
-        <command name="load">nvidia/22.5</command>
+        <command name="load">nvidia/22.7</command>
       </modules>
 
       <modules compiler="amdclang">
@@ -337,7 +337,7 @@
 
       <modules compiler="nvidia.*">
         <command name="load">PrgEnv-nvidia</command>
-        <command name="load">nvidia/22.5</command>
+        <command name="load">nvidia/22.7</command>
       </modules>
 
       <modules compiler="gnugpu">
@@ -455,7 +455,7 @@
 
       <modules compiler="nvidia">
         <command name="load">PrgEnv-nvidia</command>
-        <command name="load">nvidia/22.5</command>
+        <command name="load">nvidia/22.7</command>
       </modules>
 
       <modules compiler="amdclang">
