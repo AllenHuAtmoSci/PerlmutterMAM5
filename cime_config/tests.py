@@ -630,5 +630,47 @@ _TESTS = {
             "ERS.T62_oEC60to30v3_wQU225EC60to30.GMPAS-IAF-WW3",
             )
     },
+
+    # super-BFB
+    "e3sm_superbfb_ice_opt" : { # opt + pureMPI
+        #"share"   : True,
+        "time"    : "00:15:00",
+        "tests"   : (
+            "ERS_Lh3.T62_oEC60to30v3.DTESTM.pemod-omp1",
+            "PEM_Lh3.T62_oEC60to30v3.DTESTM.pemod-omp1",
+        )
+    },
+
+    "e3sm_superbfb_ice_dbg" : { # dbg + pureMPI
+        #"share"   : True,
+        "time"    : "00:30:00",
+        "tests"   : (
+            "ERS_Lh3_D.T62_oEC60to30v3.DTESTM.pemod-omp1",
+            "PEM_Lh3_D.T62_oEC60to30v3.DTESTM.pemod-omp1",
+        )
+    },
+
+    "e3sm_superbfb_ice_opt_thrd" : { # opt + threads
+        #"share"   : True,
+        "time"    : "00:15:00",
+        "tests"   : (
+            "ERS_Lh3.T62_oEC60to30v3.DTESTM.pemod-omp2",
+            "PET_Lh3.T62_oEC60to30v3.DTESTM.pemod-ompfull",
+        )
+    },
+
+    "e3sm_superbfb_ice_dbg_thrd" : { # dbg + threads
+        #"share"   : True,
+        "time"    : "00:30:00",
+        "tests"   : (
+            "ERS_Lh3_D.T62_oEC60to30v3.DTESTM.pemod-omp2",
+            "PET_Lh3_D.T62_oEC60to30v3.DTESTM.pemod-ompfull",
+        )
+    },
+
+    "e3sm_superbfb_ice" : {
+        "inherit" : ("e3sm_superbfb_ice_dbg", "e3sm_superbfb_ice_opt",
+                     "e3sm_superbfb_ice_dbg_thrd", "e3sm_superbfb_ice_opt_thrd"),
+    },
 }
 
